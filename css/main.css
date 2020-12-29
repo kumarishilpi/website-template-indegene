@@ -394,6 +394,9 @@ input[type="submit"] {
   display: inline-block;
   margin: 10px;
 }
+.footer p a{
+  color: white;
+}
 .pad-2{
   padding-top: 2%;
 }
@@ -424,6 +427,9 @@ input[type="submit"] {
   }
 }
 @media (max-width:767px) {
+  input[type="submit"] {
+    padding: 10px;
+  }
   .container-fluid {
     width: 100%;
      padding-right: 15px;
@@ -468,7 +474,7 @@ input[type="submit"] {
     width: 77%;
   }
   .pharma {
-    font-size: 15px;
+    font-size: 14px;
   }
   input[type="text"] {
     width: 100%;
@@ -476,7 +482,14 @@ input[type="submit"] {
     padding: 6%;
   }
 }
-
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .container-fluid {
+    width: 1170px;
+  }
+}
 @media (min-width:992px) {
   .container {
     max-width: 960px
@@ -665,7 +678,7 @@ a {
 }
 
 a:hover {
-  color: #2abccc;
+  color: #2abccc !important;
 }
 
 p,ul {
@@ -681,64 +694,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: .5rem
 }
-
-
-
-
-.fa {
-  display: inline-block;
-  font: 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
-}
-
-.fa-pencil:before {
-  content: "\f040"
-}
-
-.fa-phone:before {
-  content: "\f095"
-}
-
-.fa-twitter:before {
-  content: "\f099"
-}
-
-.fa-facebook-f:before,.fa-facebook:before {
-  content: "\f09a"
-}
-
-.fa-globe:before {
-  content: "\f0ac"
-}
-
-.fa-envelope:before {
-  content: "\f0e0"
-}
-
-.fa-mobile-phone:before,.fa-mobile:before {
-  content: "\f10b"
-}
-
-.fa-youtube:before {
-  content: "\f167"
-}
-
-.fa-google:before {
-  content: "\f1a0"
-}
-
-.fa-street-view:before {
-  content: "\f21d"
-}
-.fa-angle-left:before {
-  content: "\f104";
-}
-.fa-angle-right:before {
-  content: "\f105";
-}
-.fa-search:before {
-  content: "\f002";
+ .row:after, .row:before {
+  display: table;
+  content: " ";
 }
